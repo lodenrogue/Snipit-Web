@@ -1,0 +1,66 @@
+.card {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-hover-shallow:hover {
+	box-shadow: 0 4px 18px rgba(0,0,0,0.15), 0 5px 5px rgba(0,0,0,0.15);
+}
+
+.card-hover:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.summary-form, .text-area, .summary, .output-size-box, .button {
+	border-radius: 3px;
+}
+
+.summary-form, .text-area, .summary, 
+.output-size-box, .button, .reduction-percent {
+	font-family: Verdana;
+	color: #35495d;
+}
+
+.text-area:focus, .output-size-box:focus, .button:focus {
+	outline: 0;
+}
+
+.summary-form {
+	margin-top: 2em;
+	padding: 2em 2em 1em 2em;
+	background-color: #94A4B2;
+}
+
+.text-area {
+	width: 100%;
+	height: 20em;
+	margin-bottom: 1em;
+	resize: none;
+	border: none;
+	padding: 1em;
+	background-color: #f2f3f5;
+}
+
+.summary {
+	margin-bottom: 1em;
+	padding: 1em;
+	background-color: #f2f3f5;
+}
+
+.output-size-box {
+	width: 10em;
+	padding: 1em;
+	border: none;
+	background-color: #f2f3f5;
+}
+
+.button {
+	padding: 1em;
+	background-color: #C4CDD5;
+	border: 0;
+	border-radius: 7px;
+}
+
+.stats {
+	margin-top: 1em;
+}

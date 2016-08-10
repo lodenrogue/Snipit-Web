@@ -1,0 +1,45 @@
+<div class="summary-form card">
+	<!-- TEXT INPUT -->
+	<div class="row">
+		<div class="col-xs-12">
+			<textarea class="text-area card" ng-model="$ctrl.text" placeholder="Paste some text here" ng-show="$ctrl.response == null"></textarea>
+		</div>
+	</div>
+	<!-- /TEXT INPUT -->
+
+	<!-- SUMMARY -->
+	<div class="summary card" ng-hide="$ctrl.response == null">
+		<div class="row">
+			<div class="col-xs-12">
+				{{ $ctrl.response.summary }}
+			</div>
+		</div>
+	</div>
+	<!-- /SUMMARY -->
+
+	<div class="row">
+		<!-- OUTPUT SIZE -->
+		<div class="col-xs-6 col-sm-3 col-md-2">
+			<input class="output-size-box card" type="text" placeholder="# of Sentences" ng-model="$ctrl.outputSize" />
+		</div>
+		<!-- /OUTPUT SIZE -->
+
+		<!-- SUBMIT -->
+		<div class="col-xs-3 col-sm-2 col-md-1">
+			<button class="button card card-hover-shallow" ng-click="$ctrl.submit($ctrl.text, $ctrl.outputSize)">Submit</button>
+		</div>
+		<!-- /SUBMIT -->
+
+		<!-- RESTART -->
+		<div class="col-xs-3 col-sm-2 col-md-1">
+			<button class="button card card-hover-shallow" ng-click="$ctrl.reset()" ng-hide="$ctrl.response == null">Again</button>
+		</div>
+		<!-- /RESTART -->
+	</div>
+
+	<div class="row stats" ng-hide="$ctrl.response == null">
+		<div class="col-xs-12 reduction-percent">
+			Reduction: {{ $ctrl.response.reductionPercentage == null ? '' : ($ctrl.response.reductionPercentage | number: 2) + '%' }}
+		</div>
+	</div>
+</div>
