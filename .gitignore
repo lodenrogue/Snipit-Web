@@ -61,8 +61,6 @@ bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js
 
 bower_components/bootstrap/Gruntfile.js
 
-bower_components/bootstrap/*
-
 bower_components/html5-boilerplate/*
 
 bower_components/jquery/bower.json
@@ -82,3 +80,23 @@ bower_components/jquery/README.md
 bower_components/jquery/src/*
 
 components/*
+
+bower_components/bootstrap/dist/js/npm.js
+
+bower_components/bootstrap/fonts/*
+
+bower_components/bootstrap/grunt/*
+
+bower_components/bootstrap/js/*
+
+bower_components/bootstrap/less/*
+
+bower_components/bootstrap/nuget/*
+
+bower_components/bootstrap/LICENSE
+
+bower_components/bootstrap/package.js
+
+bower_components/bootstrap/package.json
+
+bower_components/bootstrap/README.md
